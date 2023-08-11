@@ -3,18 +3,33 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "../Button/Button";
-// import Typed from "react-typed";
+import { TypeAnimation } from 'react-type-animation';
 import Pop from "../Pop/Pop";
 import { Link } from "react-scroll";
 import "./Home.scss";
 
+const TextAnimation = () => {
+  return (
+    <TypeAnimation
+      sequence={[
+        'Front End Developer.',
+        1000,
+        'Graphic Designer.',
+        1000,
+        'React JS Developer.',
+        1000,   
+        'Freelancer',
+        1000,     
+      ]}
+      wrapper="span"
+      speed={250}
+      cursor={true}
+      repeat={Infinity}
+    />
+  )
+}
+
 const Home = () => {
-  // const typeWriter = [
-  //   "Front End Developer.",
-  //   "Graphic Designer.",
-  //   "React JS Developer.",
-  //   "Freelancer.",
-  // ];
 
   const [modalShow, setModalShow] = useState(false);
   const handleClose = () => setModalShow(false);
@@ -31,12 +46,7 @@ const Home = () => {
               </div>
               <h1>
                 <span className="typeWriter">
-                  {/* <Typed
-                    strings={typeWriter}
-                    typeSpeed={100}
-                    backSpeed={20}
-                    loop
-                  /> */}
+                  <TextAnimation />
                 </span>
               </h1>
               <h2>Designing and building user interfaces.</h2>
