@@ -3,18 +3,18 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "../Button/Button";
-import Typed from "react-typed";
+// import Typed from "react-typed";
 import Pop from "../Pop/Pop";
 import { Link } from "react-scroll";
 import "./Home.scss";
 
 const Home = () => {
-  const typeWriter = [
-    "Front End Developer.",
-    "Graphic Designer.",
-    "React JS Developer.",
-    "Freelancer.",
-  ];
+  // const typeWriter = [
+  //   "Front End Developer.",
+  //   "Graphic Designer.",
+  //   "React JS Developer.",
+  //   "Freelancer.",
+  // ];
 
   const [modalShow, setModalShow] = useState(false);
   const handleClose = () => setModalShow(false);
@@ -31,12 +31,12 @@ const Home = () => {
               </div>
               <h1>
                 <span className="typeWriter">
-                  <Typed
+                  {/* <Typed
                     strings={typeWriter}
                     typeSpeed={100}
                     backSpeed={20}
                     loop
-                  />
+                  /> */}
                 </span>
               </h1>
               <h2>Designing and building user interfaces.</h2>
