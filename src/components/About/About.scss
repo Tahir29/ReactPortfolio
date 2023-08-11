@@ -1,0 +1,57 @@
+@import "../../main_scss/main.scss";
+
+.section__about {
+  background: linear-gradient(
+    to right,
+    $primary-light 0%,
+    $primary-light 10%,
+    $primary-dark 10%,
+    $primary-dark 100%
+  );
+  color: $grey-neutral;
+  font-weight: 400;
+  position: relative;
+
+  @media (max-width: 991px) {
+    background: $primary-dark;
+    margin-bottom: 102px;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 20px;
+  }
+
+  .about-left {
+    padding-top: 70px;
+  }
+
+  .about-right {
+    padding-top: 220px;
+    // padding-top: 260px;
+
+    @media (max-width: 991px) {
+      padding-top: 0;
+    }
+  }
+
+  .about-content {
+    margin-bottom: 40px;
+    text-align: justify;
+    text-align-last: left;
+    font-size: 14px;
+  }
+
+  .center-social {
+    @include d_flex;
+    gap: 20px;
+    margin-right: 0;
+    position: absolute;
+    bottom: -48px;
+
+    @media (max-width: 991px) {
+      bottom: -102px;
+      left: 0;
+      right: 0;
+    }
+  }
+}

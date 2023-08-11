@@ -1,0 +1,108 @@
+@import "../../main_scss/main.scss";
+
+.center-social {
+    display: inline-block;
+    padding: 30px 40px;
+    margin-right: 30px;
+    background-color: $white;
+    box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.06);
+    -o-box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.06);
+
+    @media (max-width: 991px) {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 30px 15px;
+    }
+
+    a {
+        @include d_flex;
+        position: relative;
+        overflow: hidden;
+        color: $primary-dark;
+        background-color: $white;
+        border: 1px dashed $primary-dark;
+        font-size: 16px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        text-align: center;
+        transition: 0.5s;
+        z-index: 1;
+
+        // &:not(:last-child) {
+        //     margin-bottom: 15px;
+        // }
+
+        .icon {
+            @include d_flex;
+            position: relative;
+            color: $primary-dark;
+            transition: 0.5s;
+            z-index: 3;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $primary-dark;
+            transition: 0.5s;
+            z-index: 2;
+        }
+
+        &:hover {
+            border-color: transparent;
+
+            .icon {
+                color: $white;
+                transform: rotateY(360deg);
+            }
+
+            &:before {
+                top: 0;
+            }
+        }
+
+        &.facebook {
+            &:before {
+                background: $social-facebook;
+            }
+        }
+
+        &.twitter {
+            &:before {
+                background: $social-twitter;
+            }
+        }
+
+        &.dribble {
+            &:before {
+                background: $social-dribble;
+            }
+        }
+
+        &.behance {
+            &:before {
+                background: $social-behance;
+            }
+        }
+
+        &.instagram {
+            &:before {
+                background: $social-instagram;
+            }
+        }
+
+        &.linkedin {
+            &:before {
+                background: $social-linkedin;
+            }
+        }
+    }
+}

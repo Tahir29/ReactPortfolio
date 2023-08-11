@@ -1,0 +1,91 @@
+@import "../../main_scss/main.scss";
+
+.section__portfolio {
+  padding-top: 30px;
+  padding-bottom: 230px;
+  background: linear-gradient(
+    to right,
+    $primary-light 0%,
+    $primary-light 10%,
+    $primary-dark 10%,
+    $primary-dark 100%
+  );
+
+  @media (max-width: 991px) {
+    background: $primary-dark;
+    padding-bottom: 50px;
+  }
+
+  .list-group {
+    &-item {
+      background-color: transparent;
+      border: none;
+      padding: 40px 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $primary-neutral;
+      }
+    }
+  }
+
+  .portfolio {
+    &__list {
+      @include d_flex;
+      gap: 24px;
+      justify-content: flex-start;
+      text-decoration: none;
+      width: 100%;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+
+      &--image {
+        @include img-fluid;
+        max-width: 100%;
+        width: 0;
+        transition: all 250ms cubic-bezier(0.285, 0.105, 0.465, 1.015);
+
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+      }
+
+      &--content {
+        &-title {
+          color: $grey-neutral;
+          padding: 5px;
+          font-size: 32px;
+          font-weight: 500;
+          margin-bottom: 0;
+          line-height: 60px;
+
+          @media (max-width: 767px) {
+            font-size: 24px;
+            line-height: 48px;
+            padding: 0;
+          }
+        }
+
+        &-desc {
+          color: $primary-light;
+          font-size: 14px;
+          text-align: justify;
+          text-align-last: left;
+          margin-bottom: 0;
+          min-height: 74px;
+        }
+      }
+
+      &:hover {
+        .portfolio__list--image {
+          width: 200px;
+
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

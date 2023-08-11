@@ -1,0 +1,51 @@
+@import "../../main_scss/main.scss";
+
+.section__footer {
+  .footer__wrapper {
+    @include d_flex;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+
+    p {
+      font-size: 15px;
+      color: $black;
+      font-weight: 500;
+      margin-bottom: 0;
+
+      > a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    & > div {
+      flex-basis: 100%;
+      text-align: center;
+      padding: 50px 15px;
+
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+    }
+
+    &--left {
+      @media (max-width: 991px) {
+        padding: 15px !important;
+      }
+    }
+
+    &--right {
+      background-color: $grey-neutral;
+
+      @media (max-width: 991px) {
+        padding: 15px !important;
+      }
+    }
+  }
+}

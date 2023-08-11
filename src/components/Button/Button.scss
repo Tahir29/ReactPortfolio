@@ -1,0 +1,125 @@
+@import "../../main_scss/main.scss";
+
+.button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+.btn-large {
+    padding: 25px 0;
+    min-width: 280px;
+    border-radius: 0;
+    border-width: 2px;
+    transition: 0.5s all;
+}
+
+.btn-medium {
+    padding: 25px 50px;
+    border-radius: 0;
+    border-width: 2px;
+    transition: 0.5s all;
+}
+  
+.btn-small {
+    padding: 15px 30px;
+    border-radius: 0;
+    border-width: 2px;
+    transition: 0.5s all;
+}
+
+.btn-light {
+    background-color: $primary-neutral;
+    color: $primary-light;
+
+    &:hover,
+    &:focus {
+        color: $primary-light;
+    }
+}
+  
+.btn-dark {
+    background-color: $primary-darker;
+    color: $primary-light;
+    // background-color: #1b1f27;
+
+    &:hover,
+    &:focus {
+        color: $primary-light;
+    }
+}
+
+.btn-effect {
+    position: relative;
+    border: none;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        transition: all 0.2s linear;
+        background: $white;
+    }
+
+    span {
+        &::before,
+        &::after {
+            content: "";
+            width: 2px;
+            height: 0;
+            position: absolute;
+            transition: all 0.2s linear;
+            background: $white;
+        }
+    }
+
+    &:hover {
+        &::before,
+        &::after {
+            width: 100%;
+        }
+        
+        span {
+            &::before,
+            &::after {
+                height: 100%;
+            }
+        }
+    }
+
+    &::before {
+        left: 0;
+        top: 0;
+        transition-duration: 0.4s;
+    }
+
+    &::after {
+        right: 0;
+        bottom: 0;
+        transition-duration: 0.4s; 
+    }
+
+    span{
+        &::before {
+            left: 0;
+            top: 0;
+            transition-duration: 0.4s;
+        }
+
+        &::after {
+            right: 0;
+            bottom: 0;
+            transition-duration: 0.4s;
+        }
+    }
+      
+}
