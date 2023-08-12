@@ -82,7 +82,7 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
-      <Pop show={modalShow} onClick={handleClose} onHide={handleClose} />
+      <Pop show={modalShow} onHide={handleClose} />
     </section>
   );
 };
