@@ -20,6 +20,10 @@
   margin-left: 20px;
   display: none;
 
+  .hidden {
+    display: none;
+  }
+
   @media (max-width: 991px) {
     position: absolute;
     top: 12px;

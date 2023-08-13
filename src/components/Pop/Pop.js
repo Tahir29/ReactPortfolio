@@ -9,20 +9,20 @@ import emailjs from "@emailjs/browser";
 import "./Pop.scss";
 
 const Pop = (props) => {
-
-  const [formData, setFormDat] = useState({
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [formData, setFormData] = useState({
     user_name: "",
     user_phone: "",
     user_email: "",
     user_companyName: "",
-    user_message: ""
+    user_message: "",
   });
 
   const handleChange = (e) => {
-    const {name , value} = e.target
-    setFormDat({
+    const { name, value } = e.target;
+    setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
@@ -31,21 +31,34 @@ const Pop = (props) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_139lj8b', 'template_ukfaviu', form.current, 'kPe8s-2BJ0qysa02U')
-      .then((result) => {
-          if(result.text === 'OK') {
-            setFormDat({
-              'user_name': "",
-              'user_phone': "",
-              'user_email': "",
-              "user_companyName": "",
-              "user_message": ""
+    emailjs
+      .sendForm(
+        "service_139lj8b",
+        "template_ukfaviu",
+        form.current,
+        "kPe8s-2BJ0qysa02U"
+      )
+      .then(
+        (result) => {
+          if (result.text === "OK") {
+            setShowSuccess(true);
+            setFormData({
+              user_name: "",
+              user_phone: "",
+              user_email: "",
+              user_companyName: "",
+              user_message: "",
             });
+            setTimeout(() => {
+              setShowSuccess(false);
+            }, 5000);
           }
-      }, (error) => {
+        },
+        (error) => {
           // console.log(error.text);
-          alert("Kindly fill the correct details")
-      });
+          alert("Kindly fill the correct details");
+        }
+      );
   };
 
   return (
@@ -168,11 +181,20 @@ const Pop = (props) => {
                       </Col>
                       <Col xl={12} sm={12}>
                         <div className="text-center">
-                          <button type="submit" value="Send" className="button btn-effect btn-dark btn-small" ><span>Send</span></button>
+                          <button
+                            type="submit"
+                            value="Send"
+                            className="button btn-effect btn-dark btn-small"
+                          >
+                            <span>Send</span>
+                          </button>
                         </div>
                       </Col>
                     </Row>
                   </Form>
+                  <p className={`success-message ${showSuccess ? "show" : ""}`}>
+                    Message sent successfully!
+                  </p>
                 </Col>
               </Row>
             </Col>
