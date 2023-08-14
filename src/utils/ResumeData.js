@@ -3,13 +3,13 @@ export const education = [
     qualification: "TY.B.com - 2015",
     marks: "CGPI - 6.09",
     name: "ST. Gonsalo Garcia College, Vasai (W)",
-    desc: "St. Gonsalo Garcia College is a college in Vasai, Mumbai established in 1984. The college is recognized by and is registered as an institute of the University of Mumbai. The college was converted into a 750-bed COVID-19 care centre during the first wave of Coronavirus pandemic in 2020.",
+    desc: "St. Gonsalo Garcia College is a college in Vasai, Mumbai established in 1984. The college is recognized by and is registered as an institute of the University of Mumbai.",
   },
   {
     qualification: "HSC - 2012",
     marks: "60.83%",
     name: "New English Junior College, Vasai (W)",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam beatae vero, quam est quasi dolorem ea labore accusamus, facilis sit numquam mollitia eos nulla, iusto a quod! Eum, vel. Sunt.",
+    desc: "Founded in 1943, this institution boasts committed and skilled educators who prioritize maximizing students' educational experiences. The establishment has consistently achieved remarkable academic outcomes, with its students also shining in a variety of extracurricular pursuits.",
   },
   {
     qualification: "SSC - 2010",

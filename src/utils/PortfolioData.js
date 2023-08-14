@@ -1,6 +1,6 @@
 export const work = [
   {
-    redirect: "https://tahir29.github.io/Wedding",
+    redirect: "https://tahir29.github.io/ReactWedding/",
     preview: "images/wedding-preview.jpg",
     title: "Wedding",
     description:
@@ -18,6 +18,6 @@ export const work = [
     preview: "images/foodOrder-preview.jpg",
     title: "Food Order",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam saepe dolorem rem sapiente, omnis minus asperiores quas suscipit perferendis magnam at voluptatem ad aliquam, minima ullam vero soluta molestiae corporis?",
+      "I have developed my initial React application, incorporating CRUD operations and gaining proficiency in utilizing a range of hooks to create a resilient and feature-rich application.",
   },
 ];
