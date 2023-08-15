@@ -4,13 +4,20 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "../Button/Button";
 import Pop from "../Pop/Pop";
+import ReactGA from "react-ga";
 import "./Contact.scss";
 
 const Contact = () => {
   const [modalShow, setModalShow] = useState(false);
-
   const handleClose = () => setModalShow(false);
   const handleShow = () => setModalShow(true);
+
+  const ContactBottomClickHandler = () => {
+    ReactGA.event({
+      category: "Get In Touch Bottom",
+      action: "Get In Touch Bottom Button Clicked",
+    });
+  };
 
   return (
     <section id="contact" className="section__contact">
@@ -30,7 +37,10 @@ const Contact = () => {
                   <Button
                     title="Get in touch"
                     className="btn-light btn-medium"
-                    onClick={handleShow}
+                    onClick={() => {
+                      handleShow();
+                      ContactBottomClickHandler();
+                    }}
                   >
                     Get in touch
                   </Button>

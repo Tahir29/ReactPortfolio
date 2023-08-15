@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useEffect, useContext } from "react";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -8,17 +8,23 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import { ThemeContext } from "./contexts/ThemeContext";
+import ReactGA from "react-ga";
 // import AnimatedCursor from "react-animated-cursor";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 
 function App() {
-  const {theme} = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    ReactGA.initialize("G-M2P9D6TDWV");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
-      <div className="app" id={theme}>
-        <ScrollToTop />
-        {/* <AnimatedCursor
+    <div className="app" id={theme}>
+      <ScrollToTop />
+      {/* <AnimatedCursor
           innerSize={8}
           outerSize={24}
           color="0, 0, 0"
@@ -30,15 +36,15 @@ function App() {
           }}
           trailingSpeed={10}
         /> */}
-        <Header />
-        <Home />
-        <About />
-        {/* <Skill /> */}
-        <Resume />
-        <Portfolio />
-        <Contact />
-        <Footer />
-      </div>
+      <Header />
+      <Home />
+      <About />
+      {/* <Skill /> */}
+      <Resume />
+      <Portfolio />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 

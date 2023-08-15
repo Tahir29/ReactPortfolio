@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
 import { work } from "../../utils/PortfolioData";
+import ReactGA from "react-ga";
 import "./Portfolio.scss";
 
 const Portfolio = () => {
@@ -22,6 +23,12 @@ const Portfolio = () => {
                       rel="noreferrer"
                       target="_blank"
                       title={item.title}
+                      onClick={() => {
+                        ReactGA.event({
+                          category: `${item.title}`,
+                          action: `${item.title} Website Clicked`,
+                        });
+                      }}
                     >
                       <img
                         src={item.preview}

@@ -1,7 +1,15 @@
 import React from "react";
+import ReactGA from "react-ga";
 import "./Footer.scss";
 
 const Footer = () => {
+  const MailClickHandler = () => {
+    ReactGA.event({
+      category: "Footer Email",
+      action: "Footer Email Clicked",
+    });
+  };
+
   const FullYear = new Date();
   let year = FullYear.getFullYear();
 
@@ -13,7 +21,9 @@ const Footer = () => {
         </div>
         <div className="footer__wrapper--right">
           <p>
-            <a href="mailto:tahir.kutty@gmail.com">tahir.kutty@gmail.com</a>
+            <a href="mailto:tahir.kutty@gmail.com" onClick={MailClickHandler}>
+              tahir.kutty@gmail.com
+            </a>
           </p>
         </div>
       </div>

@@ -6,6 +6,7 @@ import Button from "../Button/Button";
 import { TypeAnimation } from "react-type-animation";
 import Pop from "../Pop/Pop";
 import { Link } from "react-scroll";
+import ReactGA from "react-ga";
 import "./Home.scss";
 
 const TextAnimation = () => {
@@ -33,6 +34,20 @@ const Home = () => {
   const [modalShow, setModalShow] = useState(false);
   const handleClose = () => setModalShow(false);
   const handleShow = () => setModalShow(true);
+
+  const ExploreClickHandler = () => {
+    ReactGA.event({
+      category: "Explore My Work",
+      action: "Explore My Work Button CLicked",
+    });
+  };
+
+  const ContactTopClickHandler = () => {
+    ReactGA.event({
+      category: "Get In Touch Top",
+      action: "Get In Touch Top Button Clicked",
+    });
+  };
 
   return (
     <section id="home" className="section__main">
@@ -67,13 +82,17 @@ const Home = () => {
                 offset={-60}
                 duration={200}
                 className="button btn-effect btn-light btn-large"
+                onClick={ExploreClickHandler}
               >
                 <span>Explore My Work</span>
               </Link>
               <Button
                 title="Get in touch"
                 className="btn-dark btn-large"
-                onClick={handleShow}
+                onClick={() => {
+                  handleShow();
+                  ContactTopClickHandler();
+                }}
               >
                 Get in touch
               </Button>

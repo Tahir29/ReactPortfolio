@@ -1,8 +1,30 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import ReactGA from "react-ga";
 import "./Social.scss";
 
 const Social = () => {
+  const FBClickHandler = () => {
+    ReactGA.event({
+      category: "FaceBook",
+      action: "FaceBook Icon Clicked",
+    });
+  };
+
+  const InstagramClickHandler = () => {
+    ReactGA.event({
+      category: "Instagram",
+      action: "Instagram Icon Clicked",
+    });
+  };
+
+  const LinkedInClickHandler = () => {
+    ReactGA.event({
+      category: "LinkedIn",
+      action: "LinkedIn Icon Clicked",
+    });
+  };
+
   return (
     <div className="center-social">
       <a
@@ -11,6 +33,7 @@ const Social = () => {
         rel="noopener noreferrer"
         className="facebook"
         title="Facebook"
+        onClick={FBClickHandler}
       >
         <span className="icon">
           <FaFacebookF />
@@ -22,6 +45,7 @@ const Social = () => {
         rel="noopener noreferrer"
         className="instagram"
         title="Instagram"
+        onClick={InstagramClickHandler}
       >
         <span className="icon">
           <FaInstagram />
@@ -33,6 +57,7 @@ const Social = () => {
         rel="noopener noreferrer"
         className="linkedin"
         title="Linked In"
+        onClick={LinkedInClickHandler}
       >
         <span className="icon">
           <FaLinkedinIn />

@@ -6,9 +6,17 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Button from "../Button/Button";
 import Skill from "../Skill/Skill";
 import { education, experience } from "../../utils/ResumeData";
+import ReactGa from "react-ga";
 import "./Resume.scss";
 
 const Resume = () => {
+  const CVClickHandler = () => {
+    ReactGa.event({
+      category: "CV Button",
+      action: "Download CV Button Clicked",
+    });
+  };
+
   return (
     <section id="resume" className="section__resume">
       <Container>
@@ -63,6 +71,7 @@ const Resume = () => {
                   className="btn-dark btn-small"
                   target="_blank"
                   download
+                  onClick={CVClickHandler}
                 >
                   <span>Download CV</span>
                 </Button>
