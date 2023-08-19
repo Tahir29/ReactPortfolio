@@ -15,9 +15,10 @@ import "./App.scss";
 
 function App() {
   const { theme } = useContext(ThemeContext);
+  const TRACKING_ID = "G-M2P9D6TDWV";
 
   useEffect(() => {
-    ReactGA.initialize("G-M2P9D6TDWV");
+    ReactGA.initialize(TRACKING_ID);
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
