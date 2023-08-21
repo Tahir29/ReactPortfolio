@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 import { TypeAnimation } from "react-type-animation";
 import Pop from "../Pop/Pop";
 import { Link } from "react-scroll";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import "./Home.scss";
 
 const TextAnimation = () => {

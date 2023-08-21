@@ -6,7 +6,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Button from "../Button/Button";
 import Skill from "../Skill/Skill";
 import { education, experience } from "../../utils/ResumeData";
-import ReactGa from "react-ga";
+import ReactGa from "react-ga4";
 import "./Resume.scss";
 
 const Resume = () => {

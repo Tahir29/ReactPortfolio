@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -8,19 +8,19 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import { ThemeContext } from "./contexts/ThemeContext";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 // import AnimatedCursor from "react-animated-cursor";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 
 function App() {
   const { theme } = useContext(ThemeContext);
-  const TRACKING_ID = "G-M2P9D6TDWV";
-
-  useEffect(() => {
-    ReactGA.initialize(TRACKING_ID);
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+  const trackingId = "G-M2P9D6TDWV";
+  ReactGA.initialize(trackingId);
+  ReactGA.send({
+    hitType: "pageview",
+    page: "/",
+  });
 
   return (
     <div className="app" id={theme}>

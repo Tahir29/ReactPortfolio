@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
 import { work } from "../../utils/PortfolioData";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import "./Portfolio.scss";
 
 const Portfolio = () => {

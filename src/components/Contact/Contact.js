@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "../Button/Button";
 import Pop from "../Pop/Pop";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import "./Contact.scss";
 
 const Contact = () => {

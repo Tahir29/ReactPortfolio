@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import "./Social.scss";
 
 const Social = () => {
