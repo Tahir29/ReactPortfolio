@@ -69,6 +69,9 @@ export const skills = [
     knows: "React JS",
   },
   {
+    knows: "Redux Toolkit",
+  },
+  {
     knows: "AMP (Accelerated Mobile Pages)",
   },
   {
@@ -81,9 +84,9 @@ export const skills = [
     knows: "Adobe Illustrator",
   },
   {
-    knows: "Adobe XD",
+    knows: "Figma",
   },
   {
-    knows: "Figma",
+    knows: "Adobe XD",
   },
 ];

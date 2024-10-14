@@ -1,12 +1,5 @@
 import React, { useContext } from "react";
-import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Resume from "./components/Resume/Resume";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
-import ScrollToTop from "./components/ScrollToTop";
+import { Header, Home, About, Resume, Portfolio, Contact, Footer, ScrollToTop  } from './components/index';
 import { ThemeContext } from "./contexts/ThemeContext";
 import ReactGA from "react-ga4";
 // import AnimatedCursor from "react-animated-cursor";

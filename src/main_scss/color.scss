@@ -1,3 +1,4 @@
+/* color.scss */
 $white: #FFFFFF;
 $black: #000000;
 $grey-neutral: #D3D8DD;
@@ -12,3 +13,35 @@ $social-dribble: #DE4F85;
 $social-behance: #0055F8;
 $social-instagram: #A63690;
 $social-linkedin: #0275B4;
+
+/* Light Theme (default) */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --grey-neutral: #d3d8dd;
+    --primary-light: #e8e9ea;
+    --primary-neutral: #343a42;
+    --primary-dark: #262d38;
+    --primary-darker: #1f242d;
+    --pop-color: #383e49;
+  
+    /* Social Media Colors */
+    --social-facebook: #3b5999;
+    --social-twitter: #55acee;
+    --social-dribble: #de4f85;
+    --social-behance: #0055f8;
+    --social-instagram: #a63690;
+    --social-linkedin: #0275b4;
+}
+  
+/* Dark Theme */
+#dark {
+    --white: #000000;
+    --black: #ffffff;
+    --grey-neutral: #3d444d;
+    --primary-light: #1f242d;
+    --primary-neutral: #aeb5bd;
+    --primary-dark: #d3d8dd;
+    --primary-darker: #e8e9ea;
+    --pop-color: #b4b9bd;
+}

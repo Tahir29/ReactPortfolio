@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  &:before,
+  &:after {
+    @extend *;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -37,7 +42,7 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background: $primary-light !important;
+  background: var(--primary-light) !important;
 }
 
 @mixin d_flex {

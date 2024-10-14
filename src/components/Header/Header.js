@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -8,6 +8,11 @@ import ThemeToggle from "../ThemeToggle";
 import "./Header.scss";
 
 function Header() {
+  // Manage the expanded state of the Navbar
+  const [expanded, setExpanded] = useState(false);
+  const handleToggle = () => setExpanded(!expanded); // Toggle between expand and collapse
+  const handleLinkClick = () => setExpanded(false); // Collapse the Navbar when a Link is clicked
+
   return (
     <div className="custom__header">
       <Navbar
@@ -16,6 +21,8 @@ function Header() {
         variant="light"
         fixed="top"
         className="navbar-default stroke"
+        expanded={expanded} // Control the expanded state
+        onToggle={handleToggle} // Handle toggling manually
       >
         <Container fluid>
           <Navbar.Brand href="/">
@@ -32,26 +39,25 @@ function Header() {
               </p>
             </div>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={handleToggle} />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
-              {menu.map((item, index) => {
-                return (
-                  <Link
-                    key={index}
-                    activeClass={item.state}
-                    to={item.to}
-                    spy={true}
-                    smooth={true}
-                    offset={-60}
-                    duration={200}
-                    className={item.name}
-                    title={item.title}
-                  >
-                    {item.title}
-                  </Link>
-                );
-              })}
+              {menu.map((item, index) => (
+                <Link
+                  key={index}
+                  activeClass={item.state}
+                  to={item.to}
+                  spy={true}
+                  smooth={true}
+                  offset={-60}
+                  duration={200}
+                  className={item.name}
+                  title={item.title}
+                  onClick={handleLinkClick} // Collapse the navbar when clicked
+                >
+                  {item.title}
+                </Link>
+              ))}
             </Nav>
           </Navbar.Collapse>
           <ThemeToggle />

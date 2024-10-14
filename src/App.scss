@@ -1,16 +1,4 @@
 @import "./main_scss/main.scss";
-@import "./main_scss/dark-theme.scss";
-@import "./main_scss/light-theme.scss";
-
-.app {
-  &#light {
-    @import "./main_scss/light-theme.scss";
-  }
-
-  &#dark {
-    @import "./main_scss/dark-theme.scss";
-  }
-}
 
 .theme-toggle {
   background: transparent;
