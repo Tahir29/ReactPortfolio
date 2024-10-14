@@ -1,4 +1,10 @@
-import { comfyPreview, weddingPreview, colorGeneratorPreview, stageCoachPreview, foodOrderPreview } from '../constants';
+import {
+  comfyPreview,
+  weddingPreview,
+  colorGeneratorPreview,
+  stageCoachPreview,
+  foodOrderPreview,
+} from "../constants";
 
 export const work = [
   {
