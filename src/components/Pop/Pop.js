@@ -14,8 +14,8 @@ const Pop = (props) => {
     user_name: "",
     user_phone: "",
     user_email: "",
-    user_companyName: "",
     user_message: "",
+    // user_companyName: "",
   });
 
   const handleChange = (e) => {
@@ -46,8 +46,8 @@ const Pop = (props) => {
               user_name: "",
               user_phone: "",
               user_email: "",
-              user_companyName: "",
               user_message: "",
+              // user_companyName: "",
             });
             setTimeout(() => {
               setShowSuccess(false);
@@ -86,7 +86,7 @@ const Pop = (props) => {
                 <Col xl={8} lg={8} md={12} sm={12}>
                   <Form className="customForm" ref={form} onSubmit={sendEmail}>
                     <Row>
-                      <Col xl={6} lg={6} md={6} sm={12}>
+                      <Col xl={12} sm={12}>
                         <FloatingLabel
                           className="mb-3"
                           controlId="floatingName"
@@ -141,7 +141,7 @@ const Pop = (props) => {
                           />
                         </FloatingLabel>
                       </Col>
-                      <Col xl={6} lg={6} md={6} sm={12}>
+                      {/* <Col xl={6} lg={6} md={6} sm={12}>
                         <FloatingLabel
                           className="mb-3"
                           controlId="floatingConpany"
@@ -158,7 +158,7 @@ const Pop = (props) => {
                             required
                           />
                         </FloatingLabel>
-                      </Col>
+                      </Col> */}
                       <Col xl={12} sm={12}>
                         <FloatingLabel
                           className="mb-3"

@@ -8,7 +8,8 @@ import {
 
 export const work = [
   {
-    redirect: "https://comfy-sloth-new.netlify.app/",
+    // redirect: "https://comfy-sloth-new.netlify.app/",
+    redirect: "https://tahir29.github.io/comfySloth/",
     preview: comfyPreview,
     title: "Comfy Sloth",
     description:
