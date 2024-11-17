@@ -27,7 +27,7 @@ export const experience = [
     desc: "Create and update CMS pages using the Magento platform. Collaborate with the design and UX teams to revamp webpages, analyze existing webpages to identify areas for improvement. Develop new UI components that align with the Magento framework and design guidelines. Regularly review and update existing UI components. Collaborate with the backend development team to integrate UI changes seamlessly into the Magento platform.",
   },
   {
-    designation: "UI / UX Developer",
+    designation: "UI/UX Developer",
     company: "Techizer Tech Solutions Pvt. Ltd.",
     duration: "August 2021 - January 2022",
     desc: "Collaborate closely with the project manager and stakeholders to understand user needs, goals, and business objectives. Use tools like Figma to iterate and refine the design based on feedback. Identify and address any design inconsistencies or issues that arise on specific browsers.",
@@ -63,7 +63,7 @@ export const skills = [
     knows: "Bootstrap",
   },
   {
-    knows: "jQuery / Javascript",
+    knows: "Javascript / jQuery",
   },
   {
     knows: "React JS",
@@ -78,13 +78,13 @@ export const skills = [
     knows: "GIT, JIRA",
   },
   {
+    knows: "Figma",
+  },
+  {
     knows: "Adobe Photoshop",
   },
   {
     knows: "Adobe Illustrator",
-  },
-  {
-    knows: "Figma",
   },
   {
     knows: "Adobe XD",
