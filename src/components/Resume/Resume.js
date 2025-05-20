@@ -66,7 +66,7 @@ const Resume = () => {
             <Col xl={12} sm={12}>
               <div className="CVButton">
                 <Button
-                  to="/TAHIR_KUTTY.pdf"
+                  to="/TAHIR__KUTTY.pdf"
                   title="Download CV"
                   className="btn-dark btn-small"
                   target="_blank"
