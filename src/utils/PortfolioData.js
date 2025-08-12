@@ -1,15 +1,21 @@
 import {
   comfyPreview,
+  comfyPreviewWebp,
   weddingPreview,
+  weddingPreviewWebp,
   colorGeneratorPreview,
+  colorGeneratorPreviewWebp,
   stageCoachPreview,
+  stageCoachPreviewWebp,
   foodOrderPreview,
+  foodOrderPreviewWebp
 } from "../constants";
 
 export const work = [
   {
     // redirect: "https://comfy-sloth-new.netlify.app/",
     redirect: "https://tahir29.github.io/comfySloth/",
+    webp: comfyPreviewWebp,
     preview: comfyPreview,
     title: "Comfy Sloth",
     description:
@@ -17,6 +23,7 @@ export const work = [
   },
   {
     redirect: "https://tahir29.github.io/ReactWedding/",
+    webp: weddingPreviewWebp,
     preview: weddingPreview,
     title: "Wedding",
     description:
@@ -24,6 +31,7 @@ export const work = [
   },
   {
     redirect: "https://tahir29.github.io/color-generator/",
+    webp: colorGeneratorPreviewWebp,
     preview: colorGeneratorPreview,
     title: "Color Generator",
     description:
@@ -31,6 +39,7 @@ export const work = [
   },
   {
     redirect: "https://www.montereystagecoachlodge.com/",
+    webp: stageCoachPreviewWebp,
     preview: stageCoachPreview,
     title: "Monterey Stage Coach Lodge",
     description:
@@ -38,6 +47,7 @@ export const work = [
   },
   {
     redirect: "https://tahir29.github.io/Food-Order/",
+    webp: foodOrderPreviewWebp,
     preview: foodOrderPreview,
     title: "Food Order",
     description:

@@ -57,7 +57,7 @@ export const skills = [
     knows: "HTML",
   },
   {
-    knows: "CSS, LESS, SCSS",
+    knows: "CSS, LESS, SCSS, Tailwind CSS",
   },
   {
     knows: "Bootstrap",
@@ -69,7 +69,13 @@ export const skills = [
     knows: "React JS",
   },
   {
+    knows: "Next JS",
+  },
+  {
     knows: "Redux Toolkit",
+  },
+  {
+    knows: "React Native",
   },
   {
     knows: "AMP (Accelerated Mobile Pages)",

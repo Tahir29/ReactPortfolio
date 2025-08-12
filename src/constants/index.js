@@ -1,5 +1,10 @@
 export const comfyPreview = `${process.env.PUBLIC_URL}/images/comfySloth-preview.jpg`;
+export const comfyPreviewWebp = `${process.env.PUBLIC_URL}/images/webp/comfySloth-preview.webp`;
 export const weddingPreview = `${process.env.PUBLIC_URL}/images/wedding-preview.jpg`;
+export const weddingPreviewWebp = `${process.env.PUBLIC_URL}/images/webp/wedding-preview.webp`;
 export const colorGeneratorPreview = `${process.env.PUBLIC_URL}/images/colorGenerator-preview.jpg`;
+export const colorGeneratorPreviewWebp = `${process.env.PUBLIC_URL}/images/webp/colorGenerator-preview.webp`;
 export const stageCoachPreview = `${process.env.PUBLIC_URL}/images/stageCoach-preview.jpg`;
+export const stageCoachPreviewWebp = `${process.env.PUBLIC_URL}/images/webp/stageCoach-preview.webp`;
 export const foodOrderPreview = `${process.env.PUBLIC_URL}/images/foodOrder-preview.jpg`;
+export const foodOrderPreviewWebp = `${process.env.PUBLIC_URL}/images/webp/foodOrder-preview.webp`;
