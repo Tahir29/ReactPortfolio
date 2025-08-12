@@ -1,3 +1,9 @@
+export const redefineGamingPreview = `${process.env.PUBLIC_URL}/images/redefineGaming-preview.jpg`;
+export const redefineGamingPreviewWebp = `${process.env.PUBLIC_URL}/images/webp/redefineGaming-preview.webp`;
+export const edgeAiPreview = `${process.env.PUBLIC_URL}/images/edgeAi-preview.jpg`;
+export const edgeAiPreviewWebp = `${process.env.PUBLIC_URL}/images/webp/edgeAi-preview.webp`;
+export const velvetPourPreview = `${process.env.PUBLIC_URL}/images/velvetPour-preview.jpg`;
+export const velvetPourPreviewWebp = `${process.env.PUBLIC_URL}/images/webp/velvetPour-preview.webp`;
 export const comfyPreview = `${process.env.PUBLIC_URL}/images/comfySloth-preview.jpg`;
 export const comfyPreviewWebp = `${process.env.PUBLIC_URL}/images/webp/comfySloth-preview.webp`;
 export const weddingPreview = `${process.env.PUBLIC_URL}/images/wedding-preview.jpg`;
