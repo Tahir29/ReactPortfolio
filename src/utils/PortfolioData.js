@@ -11,7 +11,7 @@ import {
 
 export const work = [
   {
-    redirect: "https://tahir29.github.io/velvetPour/",
+    redirect: "https://tahir29.github.io/velvetPour/", 
     preview: velvetPourPreview,
     title: "Velvet Pour",
     description:
