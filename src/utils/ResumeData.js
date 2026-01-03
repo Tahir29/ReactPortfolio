@@ -23,7 +23,7 @@ export const experience = [
   {
     designation: "Front End Developer",
     company: "Candere by Kalyan Jewellers",
-    duration: "February 2022 - Present",
+    duration: "February 2022 - September 2025",
     desc: "Create and update CMS pages using the Magento platform. Collaborate with the design and UX teams to revamp webpages, analyze existing webpages to identify areas for improvement. Develop new UI components that align with the Magento framework and design guidelines. Regularly review and update existing UI components. Collaborate with the backend development team to integrate UI changes seamlessly into the Magento platform.",
   },
   {
