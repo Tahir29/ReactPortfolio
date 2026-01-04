@@ -15,7 +15,7 @@ export const education = [
     qualification: "SSC - 2010",
     marks: "71.45%",
     name: "Citizen English High School, Vasai (W)",
-    desc: "Long-standing tradition of excellence coupled with a caring, stimulating, and open ethos. The flexible learning spaces enable the children to engage in rich as well as meaningful experiences, to interact with peers and adults, and to develop lifelong skills.",
+    desc: "Long-standing tradition of excellence coupled with a caring, stimulating, and open ethos. The flexible learning spaces enable the children to engage in rich as well as meaningful experiences, to interact with peers and adults, and to develop lifelong skills. ",
   },
 ];
 
